@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz App</h1>
+       <section>
+        <div class="quiz-header">
+            <div class="question-number">Question <span id="current-question">1</span>/<span id="total-questions">5</span>
+        </div>
+            <div class="question-text" id="question-text">Loading question...
+
+            </div>
+        </div>
+       </section>
+        <section>
+            <div class="options-container" id="options-container">
+                <!-- Options will be inserted here by JavaScript -->
+            </div>
+            <div class="controls">
+                <button id="next-btn" class="next-btn">Next</button>
+            </div>
+             <div class="score-container" id="score-container" style="display: none;">
+                <h2>Quiz Completed!</h2>
+                <p>Your score: <span id="score">0</span>/<span id="max-score">5</span></p>
+                <button id="restart-btn">Restart Quiz</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
